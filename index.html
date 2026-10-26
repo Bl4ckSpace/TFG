@@ -1,3 +1,63 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Without this, phones render the page at desktop width and shrink it -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geobus</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<div class="app">
 
+    <main>
+      <section class="screen">
+        <header class="topbar">
+          <span class="brand">Geobus</span>
+          <span class="topbar__icon">🏠</span>
+        </header>
+
+        <h1 class="titlebar">Paradas favoritas</h1>
+
+        <div class="screen__body">
+          <!-- Aquí puedes poner muchas paradas, la tabbar no se moverá -->
+          <a class="stop" href="#parada">
+            <span class="stop__line">388</span>
+            <span class="stop__info">
+              <strong class="stop__name">Avenida de Andalucía (Tussam)</strong>
+              <span class="stop__tags">
+                <span class="tag">32</span>
+                <span class="tag">39</span>
+              </span>
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- TABBAR siempre fija abajo -->
+    <nav class="tabbar" aria-label="Navegación principal">
+      <a href="#mapa">
+        <span class="tabbar__icon">🗺️</span>
+        Mapa
+      </a>
+      <a href="#paradas">
+        <span class="tabbar__icon">🚏</span>
+        Paradas
+      </a>
+      <a href="#inicio" class="active">
+        <span class="tabbar__icon">🏠</span>
+        Inicio
+      </a>
+      <a href="#monedero">
+        <span class="tabbar__icon">👛</span>
+        Monedero
+      </a>
+      <a href="#alarma">
+        <span class="tabbar__icon">🔔</span>
+        Alarma
+      </a>
+    </nav>
+
+  </div>
 </html>
