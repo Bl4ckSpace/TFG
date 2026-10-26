@@ -1,27 +1,31 @@
 /* ========== RESET & BASE ========== */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    html, body {
-      height: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #f1f5f9;
-      color: #1e293b;
-    }
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;          /* evita scroll en el body */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #1e293b;
+}
 
-    /* ========== APP CONTAINER ========== */
-    .app {
-      display: flex;
-      flex-direction: column;
-      max-height: 100%;                 /* ocupa toda la altura de la pantalla */
-      max-width: 100%;               
-      margin: 0 auto;
-      background: #ffffff;
-      box-shadow: 0 0 20px rgba(0,0,0,0.08);
-    }
+/* ========== APP CONTAINER ========== */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  background: #ffffff;
+}
 
     /* ========== CONTENIDO PRINCIPAL (crece y permite scroll) ========== */
     main {
